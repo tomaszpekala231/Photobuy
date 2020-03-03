@@ -1,0 +1,14 @@
+{
+  "name": "photobuy",
+  "version": "1.0.0",
+  "description": "Shopping cart in a vanilla Javascript",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Tomasz Pękala",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

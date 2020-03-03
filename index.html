@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photobuy</title>
+    <link rel="stylesheet" href="dist/css/all.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+
+    <navbar class="navbar">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__left">
+                    <a class="nav__left--logo" href="index.html">Photobuy
+                    </a>
+                </div>
+
+                <div class="nav__right">
+                    <a href="#" class="nav__right--cart">
+                        <i class="fas fa-shopping-cart"></i> Total:
+                        <span class="nav__right--total">0 $</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </navbar>
+
+    <div class="shopping-cart none">
+        <div class="shopping-cart__box">
+            <span class="shopping-cart__btnX">X</span>
+            <h2>Your Shopping</h2>
+
+            <div class="shopping-cart__products">
+                <!-- 
+                <div class="shopping-cart__box--product">
+                    <p class="shopping-cart__box--name">Photo Money</p>
+
+                    <input type="number" class="shopping-cart__box--input">
+
+                    <p class="shopping-cart__box--price">Price: 36$</p>
+                    <p class="shopping-cart__box--removeBtn" data-id="1">X</p>
+                </div> -->
+
+
+            </div>
+
+
+            <button class="shopping-cart__box--paymentBtn">
+                Buy products
+            </button>
+
+            <button class="shopping-cart__box--clearAllBtn">
+                Clear all
+            </button>
+        </div>
+    </div>
+
+
+    <main>
+
+        <div class="container">
+            <div class="searchBox">
+                <input type="text" class="searchBox__search" placeholder="Search a product...">
+            </div>
+
+
+            <section class="section-products">
+
+                <div class="row">
+
+                    <div class="card" id="1">
+                        <img src="dist/img/2.jpeg" alt="Denim Jeans" style="width:100%" data-src="dist/img/2.jpeg" class="card__image">
+                        <h3 class="card__title">The Cool Photo</h3>
+                        <input type="number" class="card__amount" value="1">
+                        <p class="card__price" data-price="29.99">$29.99</p>
+
+                        <p>
+                            <button class="card__btnAdd ">Add to Cart </button>
+                        </p>
+                    </div>
+                    <div class="card" id="2">
+                        <img src="dist/img/3.jpeg" alt="Denim Jeans" style="width:100%" data-src="dist/img/3.jpeg" class="card__image">
+                        <h3 class="card__title">In the office</h3>
+                        <input type="number" class="card__amount" value="1">
+                        <p class="card__price" data-price="50.00">$50.00</p>
+
+                        <p>
+                            <button class="card__btnAdd">Add to Cart </button>
+                        </p>
+                    </div>
+                    <div class="card" id="3">
+                        <img src="dist/img/4.jpeg" alt="Denim Jeans" style="width:100%" data-src="dist/img/4.jpeg" class="card__image">
+                        <h3 class="card__title">Random Image</h3>
+                        <input type="number" class="card__amount" value="1">
+                        <p class="card__price" value="9.99" data-price="9.99">$9.99</p>
+
+                        <p>
+                            <button class="card__btnAdd">Add to Cart </button>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="card" id="4">
+                        <img src="dist/img/7.jpeg" alt="Denim Jeans" style="width:100%" data-src="dist/img/2.jpeg" class="card__image">
+                        <h3 class="card__title">Unique view</h3>
+                        <input type="number" class="card__amount" value="1">
+                        <p class="card__price" data-price="79.99">$79.99</p>
+
+                        <p>
+                            <button class="card__btnAdd ">Add to Cart </button>
+                        </p>
+                    </div>
+                    <div class="card" id="5">
+                        <img src="dist/img/6.jpeg" alt="Denim Jeans" style="width:100%" data-src="dist/img/3.jpeg" class="card__image">
+                        <h3 class="card__title">Nothing is impossible</h3>
+                        <input type="number" class="card__amount" value="1">
+                        <p class="card__price" data-price="10.00">$10.00</p>
+
+                        <p>
+                            <button class="card__btnAdd">Add to Cart </button>
+                        </p>
+                    </div>
+                    <div class="card" id="6">
+                        <img src="dist/img/5.jpg" alt="Denim Jeans" style="width:100%" data-src="dist/img/4.jpeg" class="card__image">
+                        <h3 class="card__title">Dream big</h3>
+                        <input type="number" class="card__amount" value="1">
+                        <p class="card__price" data-price="59.99">$59.99</p>
+
+                        <p>
+                            <button class="card__btnAdd">Add to Cart </button>
+                        </p>
+                    </div>
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">
+            The Photobuy app created in JavaScript by Tomasz Pękala. All rights reserved &copy; </p>
+    </footer>
+
+
+    <script src="dist/app.js"></script>
+</body>
+
+</html>
