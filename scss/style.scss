@@ -15,6 +15,16 @@ body {
     background: rgba(238, 238, 238, 0.2);
 }
 
+.page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+.content-wrap {
+    padding-bottom: 5rem;    /* Footer height */
+  }
+  
+
 .container {
     max-width: $withContainer;
     margin: 0 auto;
@@ -210,6 +220,9 @@ body {
     margin: 6rem 0;
 }
 
+
+
+
 .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         max-width: 35rem;
@@ -271,4 +284,14 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+@media(max-width:55em) {
+    .row {
+        display: block;
+    }
+
+    .card {
+       margin: auto;
+       margin-top: 5rem;
+    }
 }

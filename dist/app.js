@@ -407,6 +407,20 @@ const Controller = (function (CartCtrl, UICtrl) {
         }
     }
 
+    const searchProducts = function (e) {
+        const text = e.target.value.toLowerCase();
+
+        document.querySelectorAll(DOMstrings.card).forEach((product) => {
+            const item = product.children[1].textContent
+
+            if (item.toLowerCase().indexOf(text) !== -1) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    }
+
     window.addEventListener('DOMContentLoaded', () => {
         let cartBoxDOM;
         // buttons
@@ -449,9 +463,13 @@ const Controller = (function (CartCtrl, UICtrl) {
                 alert(`Thank you for shopping! You paid ${totalSum}$.`);
                 CartCtrl.clearAllItems();
                 location.reload();
+            } else {
+                alert('Your cart is empty!')
             }
 
-        })
+        });
+
+        document.querySelector(DOMstrings.searchInput).addEventListener('keyup', searchProducts);
 
     });
 
